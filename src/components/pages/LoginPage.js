@@ -11,7 +11,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 
 const LoginPage = () => {
-  console.log(process.env.REACT_APP_BACKEND_URL);
+  // console.log(process.env.REACT_APP_BACKEND_URL);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
