@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #EEB80E;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Gap between icon and text */
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: center !important;  
+  }

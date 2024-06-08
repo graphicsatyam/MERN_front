@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+body {
+    background-image: url('../../../public/images/image4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box_container1 {
+    padding: 20px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 80%;
+    border-radius: 20px;
+    
+}
+
+.complete_box {
+   
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.policy_heading {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 22px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.policy_dtls {
+    padding: 0px 39px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 13px;
+    line-height: 2;
+    color: #636161 ;
+    text-align: justify;
+}
+
+.back_btn {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 120px;
+    text-align: center;
+    background-color: #EEB80E;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+.back_btn:hover {
+    background-color: #b3b3b3;
+    color: rgb(255, 255, 255);
+  }
+
+  .back_btn a {
+    text-decoration: none;
+    color: black;
+  }
+  .policy_txt a {
+    text-decoration: none;
+    color: #666666;
+}
+.btns a {
+    text-decoration: none;
+}
+.back_btn {
+    margin-top: 2rem;
+    width: 120px;
+    text-align: center;
+    background-color: #EEB80E;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+.back_btn:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+
+@media (max-width: 768px) {
+    .policy_heading {
+        line-height: 2;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .back_btn {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        
+    }
+    .policy_dtls {
+        padding: 0px 2px;
+    }
+}

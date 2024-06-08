@@ -1,0 +1,88 @@
+/* AllEvents.css */
+.event-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .event-card {
+    border: 2px solid #EEB80E;
+    background: #fff;
+    border-radius: 23px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .event-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .event-date {
+    font-size: 1.2em;
+    text-align: center;
+    /* margin-bottom: 10px; */
+  }
+  .date {
+    background-color: #EEB80E;
+    font-weight: 500;
+    text-align: center;
+    padding: 3px;
+    border-radius: 15px;
+  }
+  
+  .date-inputs {
+    margin-bottom: 10px;
+  }
+  
+  .description-input textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .book-now-button {
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .time {
+    text-align: center;
+    margin-top: .6rem;
+    color: blue;
+    font-weight: 500;
+    color:#EFA30F;
+  }
+  .book-now-button:hover {
+    background: #0056b3;
+  }
+  .guest {
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* I Started from Here */
+.event-name {
+    color : #EFA30F;
+    text-align: center;
+   
+}
+
+  @media (max-width: 768px) {
+    .event-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .event-card {
+      width: 90%;
+    }
+  }
+  
