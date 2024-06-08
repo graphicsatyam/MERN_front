@@ -9,7 +9,7 @@ const ForgotPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`${process.env.BACKEND_URL}/auth/forgot-password`, {
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/forgot-password`, {
       email, // Include email in the request body
     })
     .then((response) => {

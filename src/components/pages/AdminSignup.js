@@ -20,7 +20,7 @@ const AdminSignup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();    
-    axios.post(`${process.env.BACKEND_URL}/auth/adminsignup`, {
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/adminsignup`, {
       name,
       email,
       createpassword,

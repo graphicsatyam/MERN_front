@@ -32,7 +32,7 @@ const AdminLogin = () => {
     }
     
     // If email and password do not match, proceed with normal login
-    axios.post(`${process.env.BACKEND_URL}/auth/adminlogin`, { email, password })
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/adminlogin`, { email, password })
       .then((response) => {
         console.log('Response:', response.data); // Log response for debugging
         if (response.data.status) {

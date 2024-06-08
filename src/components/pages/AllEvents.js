@@ -8,7 +8,7 @@ const AdminEvent = () => {
 
   const getAllEventsData = async () => {
     try {
-      const response = await axios.get(`${process.env.BACKEND_URL}/api/admin/events`, {
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/admin/events`, {
         headers: {
           Authorization: `Bearer ${process.env.REACT_APP_API_TOKEN}`,
           "Content-Type": "application/json",

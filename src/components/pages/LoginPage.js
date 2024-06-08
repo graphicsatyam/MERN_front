@@ -8,7 +8,11 @@ import React from "react";
 import "./LoginPage.css";
 import { Link, useNavigate } from "react-router-dom";
 
+
+
 const LoginPage = () => {
+  console.log(process.env.REACT_APP_BACKEND_URL);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -24,7 +28,7 @@ const LoginPage = () => {
     setSuccessMessage(""); // Reset success message
 
    
-    axios.post(`${process.env.BACKEND_URL}/auth/login`, {
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/login`, {
       email,
       password,
     }).then((response) => {

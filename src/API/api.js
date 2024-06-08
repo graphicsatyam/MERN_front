@@ -3,7 +3,7 @@ import axios from "axios";
 
 const getAllUsersData = async () => {
     try {         
-        const response = await axios.get(`${process.env.BACKEND_URL}/api/admin/users`, {
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/admin/users`, {
             headers: {
                 'Authorization': `Bearer ${process.env.REACT_APP_API_TOKEN}`, // Ensure the token is set in .env
                 'Content-Type': 'application/json'

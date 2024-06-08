@@ -23,7 +23,7 @@ const SignupPage = () => {
 
 
 
-    axios.post(`${process.env.BACKEND_URL}/auth/signup`, {
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/signup`, {
       name,
       email,
       createpassword,

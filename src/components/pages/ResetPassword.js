@@ -10,7 +10,7 @@ const ResetPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`${process.env.BACKEND_URL}/auth/reset-password/${token}`, {
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/reset-password/${token}`, {
       password,
     }).then(response => {
       if (response.data.status) {

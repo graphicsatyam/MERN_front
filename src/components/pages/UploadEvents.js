@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+
 import './UploadEvents.css';
 
 const UploadEvents = () => {
@@ -25,7 +26,7 @@ const UploadEvents = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`${process.env.BACKEND_URL}/api/admin/events`, {
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/admin/events`, {
       uploadedDate,
       eventName,
       startingDate,

@@ -8,7 +8,7 @@ const Dashboard = () => {
   axios.defaults.withCredentials = true;
 
   useEffect(() => {
-    axios.get(`${process.env.BACKEND_URL}/auth/verify`)
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/auth/verify`)
       .then(res => {
         if (res.data.status) {
           // User is authenticated
@@ -23,7 +23,7 @@ const Dashboard = () => {
   }, [navigate]);
   axios.defaults.withCredentials = true
   // const handleLogout = () => {
-  //   axios.get(`${process.env.BACKEND_URL}/auth/logout`) // Assuming there's a logout route
+  //   axios.get(`${process.env.REACT_APP_BACKEND_URL}/auth/logout`) // Assuming there's a logout route
   //     .then(res => {
   //       if(res.data.status) {
   //           navigate('/login')

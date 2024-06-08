@@ -12,7 +12,7 @@ export const AdminEvent = () => {
 
     const getAllEventsData = async () => {
         try {     
-            const response = await axios.get(`${process.env.BACKEND_URL}/api/admin/events`, {
+            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/admin/events`, {
                 headers: {
                     'Authorization': `Bearer ${process.env.REACT_APP_API_TOKEN}`, // Ensure the token is set in .env
                     'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ export const AdminEvent = () => {
 
     const handleDelete = async (eventId) => {
         try {   
-            const response = await axios.delete(`${process.env.BACKEND_URL}/api/admin/events/${eventId}`, {
+            const response = await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/admin/events/${eventId}`, {
                 headers: {
                     'Authorization': `Bearer ${process.env.REACT_APP_API_TOKEN}`, // Ensure the token is set in .env
                     'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ export const AdminEvent = () => {
 
     const handleSave = async () => {
         try {      
-            const response = await axios.put(`${process.env.BACKEND_URL}/api/admin/events/${selectedEvent.id}`, selectedEvent, {
+            const response = await axios.put(`${process.env.REACT_APP_BACKEND_URL}/api/admin/events/${selectedEvent.id}`, selectedEvent, {
                 headers: {
                     'Authorization': `Bearer ${process.env.REACT_APP_API_TOKEN}`, // Ensure the token is set in .env
                     'Content-Type': 'application/json'
