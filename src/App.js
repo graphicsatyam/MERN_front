@@ -13,8 +13,6 @@ import UploadEvents from "./components/pages/UploadEvents";
 import AllEvents from "./components/pages/AllEvents";
 import AdminLogin from "./components/pages/AdminLogin";
 
-require('dotenv').config();
-// import AdminSignup from "./components/pages/AdminSignup";
 
 
 function App() {
