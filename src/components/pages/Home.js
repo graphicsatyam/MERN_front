@@ -12,8 +12,8 @@ const Home = () => {
  </div>
 
         <div className="validity">
-        <div className="btn1"> Valid for 2 Persons </div>
-        <div className="btn2"> No hidden Charges </div>
+        <div className="btn_new"> Valid for 2 Persons </div>
+        <div className="btn_new"> No hidden Charges </div>
         </div>
 
         <div className="login_dtl">

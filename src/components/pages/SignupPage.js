@@ -7,6 +7,7 @@ import "./SignupPage.css";
 import { Link, useNavigate } from "react-router-dom";
 
 const SignupPage = () => {
+  console.log("hiii");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [createpassword, setCreatePassword] = useState("");
@@ -19,6 +20,7 @@ const SignupPage = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
+    console.log("hloo");
     e.preventDefault();
 
 

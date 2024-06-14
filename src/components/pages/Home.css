@@ -53,6 +53,19 @@
     color: goldenrod;
   }
 
+.btn_new {
+    width: 220px;
+    text-align: center;
+    background-color: #EEB80E;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
   .btn2 {
     width: 220px;
     text-align: center;

@@ -2,6 +2,7 @@
     background-color: #EEB80E;
     display: flex;
     justify-content: center;
+    /* position: fixed; */
   }
   
   .navbar-nav {
