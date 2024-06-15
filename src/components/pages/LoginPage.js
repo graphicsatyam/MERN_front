@@ -64,7 +64,7 @@ const LoginPage = () => {
             </div>
           )}
 
-          <form onSubmit={handleSubmit}>
+          <form className='form_set' onSubmit={handleSubmit}>
             <div className="input-group">
               <input
                 type="email"

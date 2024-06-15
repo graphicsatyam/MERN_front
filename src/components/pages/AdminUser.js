@@ -35,7 +35,7 @@ export const AdminUser = () => {
         <>
         
             <section className="admin-user-section">
-                <div className="container">
+                <div className="container11">
                     <h2 style={{color:"brown"}}> Admin Users Data </h2>
                     <table  class="table table-success table-striped">
                         <thead>

@@ -1,32 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Outfit:wght@100..900&family=Satisfy&display=swap');
-
-/* details font url */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
 
 body {
     background-image: url('../../../public/images/image4.png');
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
 }
 
 .box_container {
     width: 100%;
-    height: 100vh;
+    height: 695px; /* Use vh to make the container fill the viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* Add some padding to the container for better spacing */
 }
 
 .box {
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
-   border: 2px solid #EEB80E;
+    border: 2px solid #EEB80E;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%; /* Set a percentage width to make it more flexible */
+    max-width: 400px; /* Max width to prevent it from growing too large */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
 }
 
 .login_txt {
@@ -39,17 +43,22 @@ body {
 }
 
 .input-group {
-    padding: 10px;
+    /* padding: 10px; */
+    margin-bottom: 1rem;
+    width: 100%; /* Ensure it takes the full width */
 }
+
 .input-group input {
-   width: 300px;
-   height: 50px;
-   font-size: 15px;
-   font-family: "DM Sans", sans-serif;
-   border-radius: 10px;
-   border: 2px solid #EEB80E;
-   padding: 20px;
+    width: 100%; /* Make input fields take the full width of the container */
+    height: 50px;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 10px;
+    border: 2px solid #EEB80E;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
+
 .psw {
     font-family: "DM Sans", sans-serif;
     font-size: 15px;
@@ -58,11 +67,15 @@ body {
     color: #EEB80E;
     margin-bottom: 2rem;
 }
+
+.form_set {
+    width: 100%;
+}
+
 .login_btn {
     width: 100%;
     text-align: center;
     background-color: #EEB80E;
-    color: black;
     padding: 13px 16px;
     font-family: "DM Sans", sans-serif;
     font-weight: 800;
@@ -70,6 +83,7 @@ body {
     cursor: pointer;
     color: aliceblue;
 }
+
 .login_btn:hover {
     background-color: black;
     color: #EEB80E;
@@ -80,8 +94,43 @@ body {
     margin-bottom: 2rem;
     font-family: "DM Sans", sans-serif;
     font-weight: 800;
+    text-align: center; /* Center the account text */
 }
+
 .account_txt a {
     text-decoration: none;
     color: #EEB80E;
+}
+
+.background_login {
+    height: 100vh; /* Use full viewport height */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .login_txt {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        padding: 20px;
+    }
+    
+    .input-group input {
+        height: 45px; /* Slightly smaller height for inputs */
+        font-size: 14px;
+        padding: 15px; /* Adjust padding to fit smaller height */
+    }
+    
+    .psw {
+        font-size: 14px; /* Slightly smaller font size for smaller screens */
+        padding: 15px;
+    }
+    
+    .login_btn {
+        padding: 10px 14px; /* Smaller padding for the button */
+        font-size: 16px; /* Slightly smaller font size */
+    }
+    
+    .account_txt {
+        padding: 15px;
+        font-size: 14px; /* Smaller font size for the account text */
+    }
 }

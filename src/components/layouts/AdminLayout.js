@@ -7,9 +7,12 @@ import "./AdminLayout.css";
 import { FaUser } from "react-icons/fa";
 import { BsCalendar2EventFill } from "react-icons/bs";
 import { RiHome8Fill } from "react-icons/ri";
-import { IoLogInSharp } from "react-icons/io5";
+// import { IoLogInSharp } from "react-icons/io5";
 
 const AdminLayout = () => {
+
+ 
+
   return (
     <>
       <header>
@@ -43,16 +46,15 @@ const AdminLayout = () => {
                     <FaUser /> Users Data
                   </NavLink>
                 </li>
+
+
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/">
-                    <RiHome8Fill /> Home Page
+                    <RiHome8Fill /> Logout
                   </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/login">
-                    <IoLogInSharp /> Login Page
-                  </NavLink>
-                </li>
+
+
               </ul>
             </div>
           </div>

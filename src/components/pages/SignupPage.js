@@ -67,7 +67,7 @@ const SignupPage = () => {
             </div>
           )}
 
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} style={{width:'100%'}}>
             <div className="input-group">
               <input
                 type="text"
